@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="photosGallery">
+<head>
+    <script src="/assets/js/jquery/jquery.min.js"></script>
+	
+	<!-- AngularJS -->
+	<script src="/assets/js/angular/angular.min.js"></script>
+	<!-- AngularUI Router -->
+	<script src="/assets/js/angular-ui-router/angular-ui-router.min.js"></script>
+		
+	<script src="/assets/js/angular-animate/angular-animate.min.js"></script>		
+	<script src="/assets/js/bootstrap/js/bootstrap.min.js"></script>		
+	<script src="/assets/js/angular-bootstrap/angular-bootstrap.min.js"></script>
+	
+	<script src="app.js"></script>	
+	
+	<link href="/assets/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/assets/css/bootstrap-slate.min.css" rel="stylesheet" />
+	<link href="/assets/css/ng-animation.css" rel="stylesheet" />	
+	<link href="/assets/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">			
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" ui-sref="home">Home</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+				<li>
+					<a ui-sref="photos">Photos</a>	
+			    </li>
+			    <li>
+					<a ui-sref="about">About</a>	
+			    </li> 
+		  </ul>		  
+		</div>
+	  </div>
+	</nav>
+	<div ui-view></div>
+</body>
+</html>

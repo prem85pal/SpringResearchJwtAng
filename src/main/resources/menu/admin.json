@@ -1,0 +1,11 @@
+{
+  "label": "Admin",
+  "icon": "admin",
+  "submenu": [
+    {
+      "label": "User Role",
+      "state": "userRole",
+      "p": "USER_ROLE_READ"
+    }
+  ]
+}
